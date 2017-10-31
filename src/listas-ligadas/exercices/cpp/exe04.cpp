@@ -6,7 +6,7 @@ using namespace std;
 int main(void){
 
     node * head = new node();
-    
+
     for(int i = 1; i < 100; i += 15){
         add(head, i);
     }
@@ -14,5 +14,4 @@ int main(void){
 
     cout << "O menor valor da lista é " << mininum(head) << "\n";
 
-    return 0;
-}
+return 0;
