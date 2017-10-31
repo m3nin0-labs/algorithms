@@ -122,15 +122,14 @@ void Lista::depth(int n){
   int profundidade = 0;
 
   while (p != NULL){
-    if (cont <= n){
+    if (cont < n){
+      std::cout << cont << std::endl;
       profundidade++;
-    } else {
       cont++;
     }
     p = p -> proximo;
   }
   std::cout << "A profundidade do nó escolhido é: " << profundidade << std::endl;
 }
-
 
 #endif

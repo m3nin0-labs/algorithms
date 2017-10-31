@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "lista.h"
 
 using namespace std;
@@ -30,7 +31,7 @@ int main(void){
   // lista -> height(2);
 
   // Exercício 5
-  lista -> depth(3);
+  lista -> depth(5);
 
   return 0;
 }
