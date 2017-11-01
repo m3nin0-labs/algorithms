@@ -12,7 +12,7 @@ Nesta estratégia, o método isFull() faz todo sentido
 */
 
 /*
-2° - Utilizando alocação dinâmica
+2° - Utilizando alocação dinâmica (Arquivo PilhaDinam.h)
 Aqui o isFull() não faz sentido
 */
 
