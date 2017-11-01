@@ -15,10 +15,11 @@ class Fila{
 public:
 
 /*
-  A estratégia de implementação utilizada aqui ira utilizar
-  os atributos primeiro, que faz referência ao primeiro elemento da fila (O mais antigo)
-  ultimo, que diz sobre o último elemento da lista (O mais novo)
-  e o total de itens dentro da fila;
+  A estratégia de implementação utilizada aqui ira conter
+  os atributos:
+  - primeiro, que faz referência ao primeiro elemento da fila (O mais antigo)
+  - ultimo, que diz sobre o último elemento da lista (O mais novo)
+  - total de itens dentro da fila;
 */
 
   // Atríbutos
