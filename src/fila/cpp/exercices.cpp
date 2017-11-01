@@ -1,6 +1,7 @@
 #include <iostream>
 #include "expansive.h"
 #include "automatic.h"
+#include "circular.h"
 
 using namespace std;
 
@@ -29,10 +30,20 @@ exeDois(){
   fila -> exibir();
 }
 
+void
+exeTres(){
+  Circular * circular = new Circular();
+
+  for (int i = 0; i <= 10; i++)
+    circular -> insert(i);
+
+  circular -> view();
+  cout << "Perceba que os valores foram sobrescritos\n";
+}
 
 int
 main(void){
-  exeDois();
 
+  exeTres();
   return 0;
 }
