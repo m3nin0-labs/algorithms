@@ -13,6 +13,10 @@ Repositório para armazenar e consultar algoritimos feitos durante o curso de es
   - Inserção;
   - Método de seleção;
 - 6° - Mergesort;
-- 7° - Busca binária
-- 8° - Árvore binária
-- 9° - Teoria dos grafos
+- 7° - Algoritimos de 'força bruta';
+  - Enumeração;
+  - Permutação;
+- 8° - Algoritimos de busca de palavras;
+- 9° - Busca binária;
+- 10° - Árvore binária;
+- 11° - Teoria dos grafos.
