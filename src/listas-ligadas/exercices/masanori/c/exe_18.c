@@ -7,53 +7,52 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct cel{
-  int content;
-  struct cel * proximo;
-}CELULA;
+typedef struct aux{
+  int ctn;
+  struct aux * prox;
+}No;
 
 void
-viewer(CELULA * celula){
-  CELULA * p = celula -> proximo;
+exibe(No * cabeca){
+  No * p = cabeca -> prox;
 
-  while(p != NULL){
-    printf(" %d ", p -> content);
-    p = p -> proximo;
-  }
-  printf("\n");
-}
-
-void
-insert(CELULA * celula, int content){
-  CELULA * nova = malloc(sizeof(CELULA));
-
-  nova -> content = content; nova -> proximo = celula -> proximo;
-  celula -> proximo = nova;
-}
-
-void
-freedomForAll(CELULA * celula){
-
-  CELULA * p = celula -> proximo;
-  CELULA * lixo = malloc(sizeof(CELULA));
-
-  while (p != NULL) {
-    celula -> proximo = lixo -> proximo; p = lixo -> proximo;
-    free(lixo);
+  while (p != NULL){
+    printf("%d\n", p -> ctn);
+    p = p -> prox;
   }
 }
 
 void
-main(void){
-  CELULA * cabeca = malloc(sizeof(CELULA));
+insere(No * cabeca, int ctn){
+  No * novo = malloc(sizeof(No));
+  novo -> prox = cabeca -> prox;
+  novo -> ctn = ctn;
 
-  for (int i = 1; i < 15; i++){
-    insert(cabeca, i * 5);
+  cabeca -> prox = novo;
+}
+
+void
+freedom4all(No * cabeca){
+  No * p = cabeca -> prox;
+  No * trash = malloc(sizeof(No));
+
+  while (p != NULL){
+    trash = cabeca -> prox;
+    cabeca -> prox = trash -> prox;
+    free(trash);
+    p = cabeca -> prox;
   }
-  printf("Elementos presentes na lista\n");
-  viewer(cabeca);
+}
 
-  printf("Os elementos foram excluidos\n");
-  freedomForAll(cabeca);
-  viewer(cabeca);
+void
+main(){
+  No * cabeca = malloc(sizeof(No));
+  for (int i = 1; i <= 5; i ++)
+    insere(cabeca, i * 2);
+
+  printf("Antes da liberdade: \n");
+  exibe(cabeca);
+  freedom4all(cabeca);
+  printf("Depois da liberdade: \n");
+  exibe(cabeca);
 }

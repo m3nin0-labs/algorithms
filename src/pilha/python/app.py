@@ -1,11 +1,10 @@
 '''
 Main para teste das classes de pilha
 '''
-
-from pilha import Pilha
+from pilha import Stack
 
 def main():
-    pilha = Pilha()
+    pilha = Stack()
 
     pilha.push(1)
     pilha.push(2)
@@ -15,6 +14,9 @@ def main():
 
     while(not pilha.isEmpty()):
         print(pilha.pop())
+
+    # Forçando um pop. Para testar controle
+    pilha.pop()
 
 if __name__ == '__main__':
     main()

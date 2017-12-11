@@ -8,7 +8,7 @@ A busca binária é extremamente rápida, por conta de seu método, de ir realiz
 
 No caso de lista ligada, como será feita a divisão ? Onde está o elemento do meio ?
 
-Para resolver este problema é que as árvores binárias foram criadas, com ela consigo aplicar a busca binária em estruturas de alocação dinâmica de memória.
+Para resolver este problema é que as árvores binárias foram criadas, com ela consigo aplicar a busca binária em estruturas de alocação dinâmica de memória (Listas ligadas).
 
 ## Estrutura
 
@@ -29,12 +29,13 @@ As árvores são formadas por conjuntos de nós. Onde:
 
 A característica desta árvore é que cada nó pode ter no máximo 2 subárvores. Acima disso não é árvore binária.
 
-OBS: Abaixo de cada nó há uma sub-árvore;
-OBS: O endereço da árvore é o endereço no nó raiz.
+OBS: Abaixo de cada nó há uma sub-árvore (Nó que não seja folha);
 
-* Importante: Árvores binárias representa (Velocidade) log(n)2 (log de n na base 2) .
+OBS: O endereço da árvore é o endereço do nó raiz.
 
-Árvores binárias são utilizadas principalmente para criar índices de banco de dados (SQL e NoSQL). Isso porque ele é bem rápido na pesquisa, mesmo com o crescimento  
+* Importante: Árvores binárias representam (Velocidade) log(n)2 (log de n na base 2) .
+
+Árvores binárias são utilizadas principalmente para criar índices de banco de dados (SQL e NoSQL). Isso porque são bem rápidas na pesquisa, mesmo com o crescimento.  
 
 * OBS: Todos os nós da esquerda tem valor menor, e todos os nós da direita, tem valor maior.
 
