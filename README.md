@@ -10,9 +10,10 @@ Repositório para armazenar e consultar algoritmos feitos durante o curso de est
     - Visualização de lista encadeada [ [C++](src/recursion/cpp/3_show_linkedlist.cpp), Lua, Python, Java ]
 
 - Lista encadeada (*LinkedList*):
-  - Busca em lista encadeada [ [C++](src/linkedlist/cpp/search.cpp), Lua, Python, Java]
-  - Inserção em lista encadeada [ [C++](src/linkedlist/cpp/linkedlist/insert.cpp), Lua, Python, Java ]
-
+  - Busca em lista encadeada simples [ [C++](src/linkedlist/cpp/search.cpp), Lua, Python, Java]
+  - Inserção em lista encadeada simples [ [C++](src/linkedlist/cpp/linkedlist/insert.cpp), Lua, Python, Java ]
+  - Lista encadeada circular [ [C++](src/linkedlist/cpp/linkedlist/circular.cpp), Lua, Python, Java ]
+  - Lista duplamente encadeada [ [C++](src/linkedlist/cpp/linkedlist/doublechained.cpp), Lua, Python, Java ]
 
 <!-- 
 - 1° - Recursividade [[C++](src/recursion/cpp), [Lua](src/recursion/lua), [Python](src/recursion/python), [Java](/src/recursion/java)] ;
