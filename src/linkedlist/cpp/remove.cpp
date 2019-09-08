@@ -20,6 +20,21 @@ void removeAfterNode(StringNode * listElement) {
     listElement->next=tempNode->next;
 }
 
+/**
+ * Função para remover o primeiro elemento de uma lista sem cabeça.
+ * 
+ * Diferente da função `removeAfterNode`, aqui considera-se que a lista onde
+ * o elemento a ser removido está, não possui um nó dummy (Também chamado de cabeça).
+ * Não havendo um centralizador dos endereços da lista, é necessário devolver
+ * a referência para o nó que será o primeiro.
+*/
+StringNode * removeFirstElementInHeadlessList(StringNode * list) {
+    return list->next;
+}
+
+/**
+ * Função para visualizar uma lista encadeada
+*/
 void viewLinkedList(StringNode * list) {
     if (list != NULL) {
         cout << list->content << endl;
@@ -37,5 +52,9 @@ int main(void) {
 
     cout << "After remove" << endl;
     removeAfterNode(nodeOne);
+    viewLinkedList(nodeOne);
+
+    cout << "removing the first element from the headless list" << endl;
+    nodeOne = removeFirstElementInHeadlessList(nodeOne);
     viewLinkedList(nodeOne);
 }

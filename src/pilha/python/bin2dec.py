@@ -14,7 +14,7 @@ def app():
         dec = dec // 2
 
         if dec == 0:
-            break;
+            break
 
     print('O número binário é: ', end='')
 
