@@ -1,6 +1,6 @@
-# Algoritimos de estrutura de dados
+# Algoritmos de estrutura de dados
 
-Repositório para armazenar e consultar algoritimos feitos durante o curso de estrutura de dados da FatecSJC
+Repositório para armazenar e consultar algoritmos feitos durante o curso de estrutura de dados da FatecSJC
 
 
 ## Conteúdos
