@@ -4,6 +4,12 @@ Repositório para armazenar e consultar algoritmos feitos durante o curso de est
 
 ## Conteúdos
 
+<!--
+Seção importante para o entendimento geral das estruturas de dados
+- Tipos abstratos de dados (ADTs)
+  - 
+-->
+
 - Recursividade:
     - Fibonacci [ [C++](src/recursion/cpp/1_fibonacci.cpp), [Lua](src/recursion/lua/1_fibonacci.lua), [Python](src/recursion/python/1_fibonacci.py), [Java](src/recursion/java/algorithm)]
     - Fatorial [ [C++](src/recursion/cpp/2_factorial.cpp), [Lua](src/recursion/lua/2_factorial.lua), [Python](src/recursion/python/2_factorial.py), [Java](src/recursion/java/algorithm)]
@@ -14,6 +20,15 @@ Repositório para armazenar e consultar algoritmos feitos durante o curso de est
   - Inserção em lista encadeada simples [ [C++](src/linkedlist/cpp/insert.cpp), Lua, Python, Java ]
   - Lista encadeada circular [ [C++](src/linkedlist/cpp/circular.cpp), Lua, Python, Java ]
   - Lista duplamente encadeada [ [C++](src/linkedlist/cpp/doublechained.cpp), Lua, Python, Java ]
+
+- Pilha
+    - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java];
+
+<!-- 
+- Filas
+
+- Deck
+-->
 
 <!-- 
 - 1° - Recursividade [[C++](src/recursion/cpp), [Lua](src/recursion/lua), [Python](src/recursion/python), [Java](/src/recursion/java)] ;
