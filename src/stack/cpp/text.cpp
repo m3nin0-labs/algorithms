@@ -15,9 +15,9 @@ int main() {
 
     cout << stringStackArray->pop() << endl;    
     cout << stringStackArray->pop() << endl;
-    // An exception (Stack is empty)
+    // Uma exceção (Stack is empty)
     // cout << stringStackArray->pop() << endl;
     
-    // Another exception (Stack is empty)
+    // Outra exceção (Stack is empty)
     // cout << stringStackArray->top() << endl;
 }

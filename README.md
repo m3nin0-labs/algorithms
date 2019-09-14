@@ -1,6 +1,6 @@
 # Algoritmos de estrutura de dados
 
-Repositório para armazenar e consultar algoritmos feitos durante o curso de estrutura de dados da Fatec Jessen Vidal (São José dos Campos)
+Repositório para armazenar e consultar algoritmos de estrutura de dados criados durante meus estudos.
 
 ## Conteúdos
 
@@ -23,6 +23,7 @@ Seção importante para o entendimento geral das estruturas de dados
 
 - Pilha
     - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java];
+    - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java];
 
 <!-- 
 - Filas

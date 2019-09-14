@@ -4,7 +4,7 @@
 using namespace std;
 
 /**
- * Classe que representa uma pilha de itens do tipo string
+ * Classe que representa uma pilha de itens do tipo string (Tamanho fixo)
  * 
 */
 class StringStackArray {
@@ -81,9 +81,97 @@ void StringStackArray::verifyIsFull() {
 
 void StringStackArray::verifyIsEmpty() {
     if (this->isEmpty()) {
-            throw("Stack is empty!");
+        throw("Stack is empty!");
     }
 }
 
+/**
+ * Classe para a representação de uma lista ligada nas estruturas de Pilha (Stack)
+ */
+class StringStackNode {
+public:
+    string content;
+    StringStackNode * next;
+
+    StringStackNode() {
+        this->content = "";
+        this->next = NULL;
+    }
+
+    StringStackNode(string content) {
+        this->content = content;
+        this->next = NULL;
+    }
+
+    StringStackNode(string content, StringStackNode * next) {
+        this->content = content;
+        this->next = next;
+    }
+
+    void addNext(StringStackNode * next) {
+        this->next = next;
+    }
+
+    void changeContent(string content) {
+        this->content = content;
+    }
+};
+
+class StringStackDynamic {
+public:
+    StringStackDynamic();
+
+    string pop();
+    string top();
+    void push(string item);
+    bool isEmpty();
+
+private:
+    StringStackNode * stackHead;
+
+    string getTopItem();
+    void verifyIsEmpty();
+};
+
+StringStackDynamic::StringStackDynamic() {
+    stackHead = new StringStackNode();
+}
+
+bool StringStackDynamic::isEmpty() {
+    return stackHead->next == NULL;
+}
+
+void StringStackDynamic::verifyIsEmpty() {
+    if (this->isEmpty())
+        throw("Stack is empty");
+}
+
+string StringStackDynamic::getTopItem() {
+    this->verifyIsEmpty();
+
+    return this->stackHead->content;
+}
+
+string StringStackDynamic::top() {
+    return this->getTopItem();
+}
+
+/**
+ * Método de adição de itens na pilha
+ */
+void StringStackDynamic::push(string item) {
+
+    // Cria um novo nó e então a "cabeça" da pilha passa a ser
+    // o último elemento inserido. O elemento anterior por sua vez
+    // fica "abaixo" deste.
+    stackHead = new StringStackNode(item, this->stackHead);
+}
+
+string StringStackDynamic::pop() {
+    this->verifyIsEmpty();
+
+    stackHead = stackHead->next;
+    return this->getTopItem();
+}
 
 #endif
