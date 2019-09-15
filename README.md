@@ -25,6 +25,9 @@ Seção importante para o entendimento geral das estruturas de dados
     - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java];
     - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java];
 
+- Fila
+  - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ]
+
 <!-- 
 - Filas
 
