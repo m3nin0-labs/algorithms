@@ -10,7 +10,7 @@ Seção importante para o entendimento geral das estruturas de dados
   - 
 -->
 
-- Recursividade:
+- Recursividade (*Recursion*):
     - Fibonacci [ [C++](src/recursion/cpp/1_fibonacci.cpp), [Lua](src/recursion/lua/1_fibonacci.lua), [Python](src/recursion/python/1_fibonacci.py), [Java](src/recursion/java/algorithm)]
     - Fatorial [ [C++](src/recursion/cpp/2_factorial.cpp), [Lua](src/recursion/lua/2_factorial.lua), [Python](src/recursion/python/2_factorial.py), [Java](src/recursion/java/algorithm)]
     - Visualização de lista encadeada [ [C++](src/recursion/cpp/3_show_linkedlist.cpp), Lua, Python, Java ]
@@ -21,12 +21,13 @@ Seção importante para o entendimento geral das estruturas de dados
   - Lista encadeada circular [ [C++](src/linkedlist/cpp/circular.cpp), Lua, Python, Java ]
   - Lista duplamente encadeada [ [C++](src/linkedlist/cpp/doublechained.cpp), Lua, Python, Java ]
 
-- Pilha
+- Pilha (*Stack*)
     - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java];
     - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java];
 
-- Fila
-  - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ]
+- Fila (*Queue*)
+  - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ];
+  - Fila de tamanho dinâmico (Array) [ [C++](src/queue/cpp/growth.cpp), Lua, Python, Java ]
 
 <!-- 
 - Filas
