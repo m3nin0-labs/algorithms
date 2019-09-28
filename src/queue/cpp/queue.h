@@ -72,12 +72,12 @@ bool StringQueueArray::isEmpty() {
 
 void StringQueueArray::checkIsFull() {
     if (this->isFull())
-        throw "Queue is Full!";
+        throw runtime_error("Queue is Full!");
 }
 
 void StringQueueArray::checkIsEmpty() {
     if (this->isEmpty())
-        throw "Queue is Empty!";
+        throw runtime_error("Queue is Empty!");
 }
 
 /**
@@ -163,7 +163,7 @@ bool StringQueueArrayDynamic::isEmpty() {
 
 void StringQueueArrayDynamic::checkIsEmpty() {
     if (this->isEmpty())
-        throw "Queue is Empty!";
+        throw runtime_error("Queue is Empty!");
 }
 
 void StringQueueArrayDynamic::enqueue(string item) {
