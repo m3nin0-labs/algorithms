@@ -28,6 +28,10 @@ Seção importante para o entendimento geral das estruturas de dados
 - Fila (*Queue*)
   - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ];
   - Fila de tamanho dinâmico (Array) [ [C++](src/queue/cpp/growth.cpp), Lua, Python, Java ]
+  <!--File de tamanho dinâmico (LinkedList) -->
+
+- Deque (*Deck*)
+  - Deque de tamanho dinâmico [ [C++](src/deck/cpp/growing.cpp), Lua, Python, Java ]
 
 <!-- 
 - Filas
