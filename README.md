@@ -33,6 +33,10 @@ Seção importante para o entendimento geral das estruturas de dados
 - Deque (*Deck*)
   - Deque de tamanho dinâmico [ [C++](src/deck/cpp/growing.cpp), Lua, Python, Java ]
 
+- Pesquisas (*Search*)
+  - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
+  - Pesquisa binária [ C++, Lua, Python, Java ]
+
 <!-- 
 - Filas
 
