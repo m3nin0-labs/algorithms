@@ -37,9 +37,30 @@ int binarySearch(vector<int> elements, int elementToSearch) {
 
 /**
  * Busca binária recursiva de elementos inteiros.
+ * 
+ * @param elements Vetor de elementos ordenados
+ * @param firstIndex Posição de onde é considerado que o vetor começa
+ * @param lastIndex Posição de onde é considerado que o vetor termina
+ * @param elementToSearch Número pesquisado no vetor de elementos
+ * @returns Caso encontre o elemento retorna seu índice no vetor, caso contrário retorna -1.
  */
-int recursiveBinarySearch(vector<int> elements, int firstIndex, int lastIndex, int elementtoSearch) {
-    return 0;
+int recursiveBinarySearch(vector<int> elements, int firstIndex, int lastIndex, int elementToSearch) {
+    int halfIndex = static_cast<int>((firstIndex + lastIndex) / 2);
+
+    // Verificação padrão de parada (Condição principal para um programa recursivo)
+    if (firstIndex > lastIndex) {
+        return -1;
+    }
+
+    if (elements[halfIndex] == elementToSearch) {
+        return halfIndex;
+    }
+
+    if (elementToSearch > elements[halfIndex]) {
+        return recursiveBinarySearch(elements, halfIndex + 1, lastIndex, elementToSearch);
+    } else {
+        return recursiveBinarySearch(elements, firstIndex, halfIndex - 1, elementToSearch);
+    }
 }
 
 #endif
