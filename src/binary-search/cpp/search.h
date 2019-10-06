@@ -26,13 +26,20 @@ int binarySearch(vector<int> elements, int elementToSearch) {
             return halfIndex;
         } else {
             if (elementToSearch < elements[halfIndex]) {
-                lastIndex -= 1;
+                lastIndex = halfIndex - 1;
             } else {
-                firstIndex += 1;
+                firstIndex = halfIndex + 1;
             }
         }
     }
     return -1;
+}
+
+/**
+ * Busca binária recursiva de elementos inteiros.
+ */
+int recursiveBinarySearch(vector<int> elements, int firstIndex, int lastIndex, int elementtoSearch) {
+    return 0;
 }
 
 #endif
