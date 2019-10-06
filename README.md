@@ -36,6 +36,7 @@ Seção importante para o entendimento geral das estruturas de dados
 - Pesquisas (*Search*)
   - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
   - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), Lua, Python, Java ]
+  - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), Lua, Python, Java ]
 
 <!-- 
 - Filas
