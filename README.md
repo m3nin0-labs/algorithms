@@ -37,7 +37,7 @@ Seção importante para o entendimento geral das estruturas de dados
   - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), Lua, Python, Java ]
   - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), Lua, Python, Java ]
 
-- Arvores (*trees*)
+- Árvores (*trees*)
   - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
   - Árvore binária (Percurso pré-ordem) [ [C++](src/binary-tree/cpp/depthfirst.cpp), Lua, Python, Java ]
   - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, Java ]
