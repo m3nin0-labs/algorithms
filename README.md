@@ -7,7 +7,6 @@ Repositório para armazenar e consultar algoritmos de estrutura de dados criados
 <!--
 Seção importante para o entendimento geral das estruturas de dados
 - Tipos abstratos de dados (ADTs)
-  - 
 -->
 
 - Recursividade (*Recursion*):
@@ -22,8 +21,8 @@ Seção importante para o entendimento geral das estruturas de dados
   - Lista duplamente encadeada [ [C++](src/linkedlist/cpp/doublechained.cpp), Lua, Python, Java ]
 
 - Pilha (*Stack*)
-    - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java];
-    - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java];
+    - Pilha de tamanho fixo [ [C++](src/stack/cpp/text.cpp), Lua, Python, Java]
+    - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java]
 
 - Fila (*Queue*)
   - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ];
@@ -37,6 +36,13 @@ Seção importante para o entendimento geral das estruturas de dados
   - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
   - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), Lua, Python, Java ]
   - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), Lua, Python, Java ]
+
+- Arvores (*trees*)
+  - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
+  - Árvore binária (Percurso pré-ordem) [ [C++](src/binary-tree/cpp/depthfirst.cpp), Lua, Python, Java ]
+  - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, Java ]
+
+  <!-- - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/sequential.cpp), Lua, Python, Java ] -->
 
 <!-- 
 - Filas
