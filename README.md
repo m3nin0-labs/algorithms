@@ -27,15 +27,15 @@ Seção importante para o entendimento geral das estruturas de dados
 - Fila (*Queue*)
   - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ];
   - Fila de tamanho dinâmico (Array) [ [C++](src/queue/cpp/growth.cpp), Lua, Python, Java ]
-  <!--File de tamanho dinâmico (LinkedList) -->
+  <!--Fila de tamanho dinâmico (LinkedList) -->
 
 - Deque (*Deck*)
   - Deque de tamanho dinâmico [ [C++](src/deck/cpp/growing.cpp), Lua, Python, Java ]
 
 - Pesquisas (*Search*)
   - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
-  - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), Lua, Python, Java ]
-  - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), Lua, Python, Java ]
+  - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), [Lua](/src/binary-search/lua/bsearch.lua), Python, Java ]
+  - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), [Lua](/src/binary-search/lua/rbsearch.lua), Python, Java ]
 
 - Árvores (*trees*)
   - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
