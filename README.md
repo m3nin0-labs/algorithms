@@ -30,7 +30,7 @@ Seção importante para o entendimento geral das estruturas de dados
   <!--Fila de tamanho dinâmico (LinkedList) -->
 
 - Deque (*Deck*)
-  - Deque de tamanho dinâmico [ [C++](src/deck/cpp/growing.cpp), Lua, Python, Java ]
+  - Deque de tamanho dinâmico [ [C++](src/deck/cpp/growing.cpp), [Lua](src/deck/lua/usedeck.lua), Python, Java ]
 
 - Pesquisas (*Search*)
   - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
