@@ -41,6 +41,7 @@ Seção importante para o entendimento geral das estruturas de dados
   - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
   - Árvore binária (Percurso pré-ordem) [ [C++](src/binary-tree/cpp/depthfirst.cpp), Lua, Python, Java ]
   - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, Java ]
+  - Árvore binária (Percurso pós-ordem) [ [C++](src/binary-tree/cpp/endis.cpp), Lua, Python, Java ]
 
   <!-- - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/sequential.cpp), Lua, Python, Java ] -->
 

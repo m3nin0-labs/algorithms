@@ -100,7 +100,20 @@ void BinaryTree::inOrder() {
     std::cout << std::endl;
 }
 
+void BinaryTree::posOrderRecursive(TreeNode * node) {
+    if (node->getLeftNode() != NULL) {
+        this->posOrderRecursive(node->getLeftNode());
+    }
+
+    if (node->getRightNode() != NULL) {
+        this->posOrderRecursive(node->getRightNode());
+    }
+    std::cout << node->getData();
+}
+
 void BinaryTree::posOrder() {
+    this->posOrderRecursive(this->root);
+    std::cout << std::endl;
 }
 
 void BinaryTree::preOrderRecursive(TreeNode * node) {
