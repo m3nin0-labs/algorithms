@@ -63,6 +63,7 @@ TreeNode<T> * TreeNode<T>::getRightNode() {
 /**
  * Classe que realiza a representação de uma árvore binária
  */
+// ToDo: Especializar as templates, evitando erros de utilização
 template <typename G>
 class BinaryTree {
 public:
@@ -73,6 +74,8 @@ public:
     void inOrder();
     void posOrder();
     void preOrder();
+
+    TreeNode<G> * search(G value);
     TreeNode<G> * insert(TreeNode<G> * value);
 private:
     TreeNode<G> * root;
@@ -80,6 +83,8 @@ private:
     void inOrderRecursive(TreeNode<G> * node);
     void preOrderRecursive(TreeNode<G> * node);
     void posOrderRecursive(TreeNode<G> * node);
+    
+    TreeNode<G> * searchRecursive(TreeNode<G> * root, G value);
     TreeNode<G> * insertRecursive(TreeNode<G> * root, TreeNode<G> * newNode);
 };
 
@@ -174,6 +179,20 @@ TreeNode<G> * BinaryTree<G>::insertRecursive(TreeNode<G> * root, TreeNode<G> * n
             nodeAux, newNode
         ));
     }
+}
+
+template <typename G>
+TreeNode<G> * BinaryTree<G>::search(G value) {
+    return this->searchRecursive(this->root, value);
+}
+
+template <typename G>
+TreeNode<G> * BinaryTree<G>::searchRecursive(TreeNode<G> * root, G value) {
+    if (root == NULL) return NULL;
+    if (root->getData() == value) return root;
+
+    if (root->getData() > value) return this->searchRecursive(root->getLeftNode(), value);
+    else return this->searchRecursive(root->getRightNode(), value);
 }
 
 #endif

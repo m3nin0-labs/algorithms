@@ -1,3 +1,8 @@
+/**
+ * Script de exemplo de inserção de valores em uma árvore binária. Aqui a ordenação dos elementos inseridos
+ * é feita pelo método de inserção
+ */
+
 #include <iostream>
 #include "tree.h"
 
