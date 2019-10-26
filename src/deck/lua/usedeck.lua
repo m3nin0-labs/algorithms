@@ -14,3 +14,19 @@ addAtFirst(dmaster, dthree);
 showFromStart(dmaster);
 print("---")
 showFromEnd(dmaster);
+
+-- Removendo do início
+print("Removendo do início")
+removeFromStart(dmaster)
+-- Exibindo o resultado
+showFromStart(dmaster);
+print("---")
+showFromEnd(dmaster);
+
+-- Removendo do fim
+print("Removendo do fim")
+removeFromEnd(dmaster);
+-- Exibindo o resultado
+showFromStart(dmaster);
+print("---")
+showFromEnd(dmaster);
