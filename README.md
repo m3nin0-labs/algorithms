@@ -25,7 +25,7 @@ Seção importante para o entendimento geral das estruturas de dados
     - Pilha de tamanho dinâmico (Lista ligada) [ [C++](src/stack/cpp/dynamictext.cpp), Lua, Python, Java]
 
 - Fila (*Queue*)
-  - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ];
+  - Fila de tamanho fixo [ [C++](src/queue/cpp/textqueue.cpp), Lua, Python, Java ]
   - Fila de tamanho dinâmico (Array) [ [C++](src/queue/cpp/growth.cpp), Lua, Python, Java ]
   <!--Fila de tamanho dinâmico (LinkedList) -->
 
@@ -34,8 +34,8 @@ Seção importante para o entendimento geral das estruturas de dados
 
 - Pesquisas (*Search*)
   - Pesquisa sequencial [ [C++](src/sequential-search/cpp/sequential.cpp), Lua, Python, Java ]
-  - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), [Lua](/src/binary-search/lua/bsearch.lua), Python, Java ]
-  - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), [Lua](/src/binary-search/lua/rbsearch.lua), Python, Java ]
+  - Pesquisa binária [ [C++](/src/binary-search/cpp/bsearch.cpp), [Lua](/src/binary-search/lua/bsearch.lua), [Python](src/binary-search/python/interative.py), Java ]
+  - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), [Lua](/src/binary-search/lua/rbsearch.lua), [Python](src/binary-search/python/recursive.py), Java ]
 
 - Árvores (*trees*)
   - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
