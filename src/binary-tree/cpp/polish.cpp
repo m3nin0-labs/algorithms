@@ -14,16 +14,16 @@ using namespace std;
  * Função auxiliar para gerar uma árvore de exemplo com uma expressão matemática.
  * Processo manual, porém utilizado para fins de entendimento de toda a notação :)
  */
-BinaryTree * createPolishTree() {
-    TreeNode * node1 = new TreeNode("a");
-    TreeNode * node2 = new TreeNode("+");
-    TreeNode * node3 = new TreeNode("*");
-    TreeNode * node4 = new TreeNode("b");
-    TreeNode * node5 = new TreeNode("-");
-    TreeNode * node6 = new TreeNode("/");
-    TreeNode * node7 = new TreeNode("c");
-    TreeNode * node8 = new TreeNode("d");
-    TreeNode * node9 = new TreeNode("e");
+BinaryTree<string> * createPolishTree() {
+    TreeNode<string> * node1 = new TreeNode<string>("a");
+    TreeNode<string> * node2 = new TreeNode<string>("+");
+    TreeNode<string> * node3 = new TreeNode<string>("*");
+    TreeNode<string> * node4 = new TreeNode<string>("b");
+    TreeNode<string> * node5 = new TreeNode<string>("-");
+    TreeNode<string> * node6 = new TreeNode<string>("/");
+    TreeNode<string> * node7 = new TreeNode<string>("c");
+    TreeNode<string> * node8 = new TreeNode<string>("d");
+    TreeNode<string> * node9 = new TreeNode<string>("e");
 
     node6->setLeftNode(node7);
     node6->setRightNode(node8);
@@ -34,11 +34,11 @@ BinaryTree * createPolishTree() {
     node2->setLeftNode(node1);
     node2->setRightNode(node3);
 
-    return new BinaryTree(node2);
+    return new BinaryTree<string>(node2);
 }
 
 int main() {
-    BinaryTree * binaryTree = createPolishTree();
+    BinaryTree<string> * binaryTree = createPolishTree();
 
     binaryTree->inOrder();
 }

@@ -8,22 +8,22 @@
 using namespace std;
 
 // Função auxiliar para a criação de árvores
-TreeNode * createNode(string data) {
-    return new TreeNode(data);
+TreeNode<string> * createNode(string data) {
+    return new TreeNode<string>(data);
 }
 
 int main() {
     // Criando os objetos que representam os nós da árvore
-    TreeNode * rootNode = new TreeNode("A");
-    TreeNode * n1 = createNode("B");
-    TreeNode * n2 = createNode("D");
-    TreeNode * n3 = createNode("C");
-    TreeNode * n4 = createNode("D");
-    TreeNode * n5 = createNode("E");
-    TreeNode * n6 = createNode("F");
-    TreeNode * n7 = createNode("G");
-    TreeNode * n8 = createNode("H");
-    TreeNode * n9 = createNode("I");
+    TreeNode<string> * rootNode = new TreeNode<string>("A");
+    TreeNode<string> * n1 = createNode("B");
+    TreeNode<string> * n2 = createNode("D");
+    TreeNode<string> * n3 = createNode("C");
+    TreeNode<string> * n4 = createNode("D");
+    TreeNode<string> * n5 = createNode("E");
+    TreeNode<string> * n6 = createNode("F");
+    TreeNode<string> * n7 = createNode("G");
+    TreeNode<string> * n8 = createNode("H");
+    TreeNode<string> * n9 = createNode("I");
 
     // Ligando cada um dos elementos
     rootNode->setLeftNode(n1);
@@ -38,7 +38,7 @@ int main() {
     n6->setRightNode(n9);
 
     // Criando a árvore e percorrendo os elementos
-    BinaryTree * binaryTree = new BinaryTree(rootNode);
+    BinaryTree<string> * binaryTree = new BinaryTree<string>(rootNode);
 
     // Validação baseada em: https://www.ime.usp.br/~song/mac5710/slides/05tree.pdf
     binaryTree->posOrder();

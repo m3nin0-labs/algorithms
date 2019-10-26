@@ -4,15 +4,15 @@
 using namespace std;
 
 int main() {
-    TreeNode * rootNode = new TreeNode("A");
-    TreeNode * nodeB = new TreeNode("B");
-    TreeNode * nodeD = new TreeNode("D");
-    TreeNode * nodeC = new TreeNode("C");
-    TreeNode * nodeE = new TreeNode("E");
-    TreeNode * nodeF = new TreeNode("F");
-    TreeNode * nodeG = new TreeNode("G");
-    TreeNode * nodeH = new TreeNode("H");
-    TreeNode * nodeI = new TreeNode("I");
+    TreeNode<string> * rootNode = new TreeNode<string>("A");
+    TreeNode<string> * nodeB = new TreeNode<string>("B");
+    TreeNode<string> * nodeD = new TreeNode<string>("D");
+    TreeNode<string> * nodeC = new TreeNode<string>("C");
+    TreeNode<string> * nodeE = new TreeNode<string>("E");
+    TreeNode<string> * nodeF = new TreeNode<string>("F");
+    TreeNode<string> * nodeG = new TreeNode<string>("G");
+    TreeNode<string> * nodeH = new TreeNode<string>("H");
+    TreeNode<string> * nodeI = new TreeNode<string>("I");
 
     rootNode->setLeftNode(nodeB);
     rootNode->setRightNode(nodeC);
@@ -25,7 +25,7 @@ int main() {
     nodeF->setLeftNode(nodeH);
     nodeF->setRightNode(nodeI);
 
-    BinaryTree * binaryTree = new BinaryTree(rootNode);
+    BinaryTree<string> * binaryTree = new BinaryTree<string>(rootNode);
 
     // Percorrendo a árvore gerada
     binaryTree->preOrder();

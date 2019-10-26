@@ -6,12 +6,13 @@
 /**
  * Classe para gerar a representação de um nó de uma árvore
  */
+template <typename T>
 class TreeNode {
 public:
     TreeNode();
-    TreeNode(std::string data);
+    TreeNode(T data);
 
-    std::string getData();
+    T getData();
 
     void setLeftNode(TreeNode * leftNode);
     void setRightNode(TreeNode * rightNode);
@@ -19,75 +20,88 @@ public:
     TreeNode * getLeftNode();
     TreeNode * getRightNode();
 private:
-    std::string data;
+    T data;
 
     TreeNode * leftNode;
     TreeNode * rightNode;
 };
 
-TreeNode::TreeNode() {
+template <typename T>
+TreeNode<T>::TreeNode() {
 }
 
-TreeNode::TreeNode(std::string data) {
+template <typename T>
+TreeNode<T>::TreeNode(T data) {
     this->data = data;
 }
 
-std::string TreeNode::getData() {
+template <typename T>
+T TreeNode<T>::getData() {
     return this->data;
 }
 
-void TreeNode::setLeftNode(TreeNode * leftNode) {
+template <typename T>
+void TreeNode<T>::setLeftNode(TreeNode<T> * leftNode) {
     this->leftNode = leftNode;
 }
 
-void TreeNode::setRightNode(TreeNode * rightNode) {
+template <typename T>
+void TreeNode<T>::setRightNode(TreeNode<T> * rightNode) {
     this->rightNode = rightNode;
 }
 
-TreeNode * TreeNode::getLeftNode() {
+template <typename T>
+TreeNode<T> * TreeNode<T>::getLeftNode() {
     return this->leftNode;
 }
 
-TreeNode * TreeNode::getRightNode() {
+template <typename T>
+TreeNode<T> * TreeNode<T>::getRightNode() {
     return this->rightNode;
 }
 
 /**
  * Classe que realiza a representação de uma árvore binária
  */
+template <typename G>
 class BinaryTree {
 public:
-    BinaryTree(TreeNode * root);
+    BinaryTree(TreeNode<G> * root);
 
-    TreeNode * getRoot();
+    TreeNode<G> * getRoot();
 
     void inOrder();
     void posOrder();
     void preOrder();
+    TreeNode<G> * insert(TreeNode<G> * value);
 private:
-    TreeNode * root;
+    TreeNode<G> * root;
 
-    void inOrderRecursive(TreeNode * node);
-    void preOrderRecursive(TreeNode * node);
-    void posOrderRecursive(TreeNode * node);
+    void inOrderRecursive(TreeNode<G> * node);
+    void preOrderRecursive(TreeNode<G> * node);
+    void posOrderRecursive(TreeNode<G> * node);
+    TreeNode<G> * insertRecursive(TreeNode<G> * root, TreeNode<G> * newNode);
 };
 
-BinaryTree::BinaryTree(TreeNode * root) {
+template <typename G>
+BinaryTree<G>::BinaryTree(TreeNode<G> * root) {
     this->root = root;
 }
 
-TreeNode * BinaryTree::getRoot() {
+template <typename G>
+TreeNode<G> * BinaryTree<G>::getRoot() {
     return this->root;
 }
 
 // simetric order (Ordem simétrica)
-void BinaryTree::inOrderRecursive(TreeNode * node) {
+template <typename G>
+void BinaryTree<G>::inOrderRecursive(TreeNode<G> * node) {
     if (node->getLeftNode() != NULL) {
         // std::cout << "(";
         this->inOrderRecursive(node->getLeftNode());
     } 
 
-    std::cout << node->getData();
+    std::cout << " " << node->getData();
 
     if (node->getRightNode() != NULL) {
         this->inOrderRecursive(node->getRightNode());
@@ -95,12 +109,14 @@ void BinaryTree::inOrderRecursive(TreeNode * node) {
     }
 }
 
-void BinaryTree::inOrder() {
+template <typename G>
+void BinaryTree<G>::inOrder() {
     this->inOrderRecursive(this->root);
     std::cout << std::endl;
 }
 
-void BinaryTree::posOrderRecursive(TreeNode * node) {
+template <typename G>
+void BinaryTree<G>::posOrderRecursive(TreeNode<G> * node) {
     if (node->getLeftNode() != NULL) {
         this->posOrderRecursive(node->getLeftNode());
     }
@@ -108,16 +124,18 @@ void BinaryTree::posOrderRecursive(TreeNode * node) {
     if (node->getRightNode() != NULL) {
         this->posOrderRecursive(node->getRightNode());
     }
-    std::cout << node->getData();
+    std::cout << " " << node->getData();
 }
 
-void BinaryTree::posOrder() {
+template <typename G>
+void BinaryTree<G>::posOrder() {
     this->posOrderRecursive(this->root);
     std::cout << std::endl;
 }
 
-void BinaryTree::preOrderRecursive(TreeNode * node) {
-    std::cout << node->getData();
+template <typename G>
+void BinaryTree<G>::preOrderRecursive(TreeNode<G> * node) {
+    std::cout << " " << node->getData();
     if (node->getLeftNode() != NULL) {
         this->preOrderRecursive(node->getLeftNode());
     }
@@ -128,9 +146,34 @@ void BinaryTree::preOrderRecursive(TreeNode * node) {
 }
 
 // depth-first (Profundidade)
-void BinaryTree::preOrder() {
+template <typename G>
+void BinaryTree<G>::preOrder() {
     this->preOrderRecursive(this->root);
     std::cout << std::endl;
+}
+
+template <typename G>
+TreeNode<G> * BinaryTree<G>::insert(TreeNode<G> * newNode) {
+    return this->insertRecursive(this->root, newNode);
+}
+
+template <typename G>
+TreeNode<G> * BinaryTree<G>::insertRecursive(TreeNode<G> * root, TreeNode<G> * newNode) {
+    if (root == NULL) return newNode;
+
+    if (root->getData() > newNode->getData()) {
+        TreeNode<G> * nodeAux = root->getLeftNode();
+
+        root->setLeftNode(this->insertRecursive(
+            nodeAux, newNode
+        ));
+    } else {
+        TreeNode<G> * nodeAux = root->getRightNode();
+
+        root->setRightNode(this->insertRecursive(
+            nodeAux, newNode
+        ));
+    }
 }
 
 #endif
