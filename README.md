@@ -15,9 +15,9 @@ Seção importante para o entendimento geral das estruturas de dados
     - Visualização de lista encadeada [ [C++](src/recursion/cpp/3_show_linkedlist.cpp), Lua, Python, Java ]
 
 - Lista encadeada (*LinkedList*):
-  - Busca em lista encadeada simples [ [C++](src/linkedlist/cpp/search.cpp), Lua, Python, Java]
-  - Inserção em lista encadeada simples [ [C++](src/linkedlist/cpp/insert.cpp), Lua, Python, Java ]
-  - Lista encadeada circular [ [C++](src/linkedlist/cpp/circular.cpp), Lua, Python, Java ]
+  - Busca em lista encadeada simples [ [C++](src/linkedlist/cpp/search.cpp), Lua, Python, [Java](src/linkedlist/java/Search.java)]
+  - Inserção em lista encadeada simples [ [C++](src/linkedlist/cpp/insert.cpp), Lua, Python, [Java](src/linkedlist/java/Insert.java) ]
+  - Lista encadeada circular [ [C++](src/linkedlist/cpp/circular.cpp), Lua, Python, [Java](src/linkedlist/java/Circle.java) ]
   - Lista duplamente encadeada [ [C++](src/linkedlist/cpp/doublechained.cpp), Lua, Python, Java ]
 
 - Pilha (*Stack*)
