@@ -38,12 +38,12 @@ Seção importante para o entendimento geral das estruturas de dados
   - Pesquisa binária (Recursiva) [ [C++](/src/binary-search/cpp/rbsearch.cpp), [Lua](/src/binary-search/lua/rbsearch.lua), [Python](src/binary-search/python/recursive.py), [Java](src/binary-search/java/MainRecursive.java) ]
 
 - Árvores (*trees*)
-  - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, Java ]
-  - Árvore binária (Inserção) [ [C++](src/binary-tree/cpp/insert.cpp), Lua, Python, Java ]
+  - Árvore binária (Base) [ [C++](src/binary-tree/cpp/initialgarden.cpp), Lua, Python, [Java](src/binary-tree/java/BinaryTree.java) ]
+  - Árvore binária (Inserção) [ [C++](src/binary-tree/cpp/insert.cpp), Lua, Python, [Java](src/binary-tree/java/Base.java) ]
   - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/search.cpp), Lua, Python, Java ]
-  - Árvore binária (Percurso pré-ordem) [ [C++](src/binary-tree/cpp/depthfirst.cpp), Lua, Python, Java ]
-  - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, Java ]
-  - Árvore binária (Percurso pós-ordem) [ [C++](src/binary-tree/cpp/endis.cpp), Lua, Python, Java ]
+  - Árvore binária (Percurso pré-ordem) [ [C++](src/binary-tree/cpp/depthfirst.cpp), Lua, Python, [Java](src/binary-tree/java/VisualizeTree.java) ]
+  - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, [Java](src/binary-tree/java/VisualizeTree.java) ]
+  - Árvore binária (Percurso pós-ordem) [ [C++](src/binary-tree/cpp/endis.cpp), Lua, Python, [Java](src/binary-tree/java/VisualizeTree.java) ]
 
   <!-- - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/sequential.cpp), Lua, Python, Java ] -->
 
