@@ -77,6 +77,43 @@ public class GenericLinkedList<T> {
 	}
 
 	/**
+	 * Exibe os elementos de uma lista duplamente encadeada (De trás para frente)
+	 */
+	public void showReverse() {
+		Node<T> node = getLastNode(firstElement);
+		showReverseRecursive(node);
+	}
+
+	/**
+	 * Recupera o último elemento da lista ligada
+	 * 
+	 * @param node
+	 * @return
+	 */
+	private Node<T> getLastNode(Node<T> node) {
+		while (!Objects.isNull(node.getNext())) {
+			node = node.getNext();
+		}
+		return node;
+	}
+
+	@SuppressWarnings("static-access")
+	private void showReverseRecursive(Node<T> node) {
+		if (!Objects.isNull(node)) {
+			System.out.println(node.getContent());
+
+			try {
+				Thread.currentThread().sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			showReverseRecursive(node.getPrevious());
+		}
+	}
+
+	/**
 	 * Mecanismo para exibir os elementos da lista encadeada de forma recursiva
 	 * 
 	 * @param node
