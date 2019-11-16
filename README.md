@@ -12,9 +12,9 @@ Seção importante para o entendimento geral das estruturas de dados
 - Recursividade (*Recursion*):
     - Fibonacci [ [C++](src/recursion/cpp/1_fibonacci.cpp), [Lua](src/recursion/lua/1_fibonacci.lua), [Python](src/recursion/python/1_fibonacci.py), [Java](src/recursion/java/algorithm)]
     - Fatorial [ [C++](src/recursion/cpp/2_factorial.cpp), [Lua](src/recursion/lua/2_factorial.lua), [Python](src/recursion/python/2_factorial.py), [Java](src/recursion/java/algorithm)]
-    - Visualização de lista encadeada [ [C++](src/recursion/cpp/3_show_linkedlist.cpp), Lua, Python, Java ]
 
 - Lista encadeada (*LinkedList*):
+  - Visualização de lista encadeada [ [C++](src/recursion/cpp/3_show_linkedlist.cpp), Lua, Python, Java ]
   - Busca em lista encadeada simples [ [C++](src/linkedlist/cpp/search.cpp), Lua, Python, [Java](src/linkedlist/java/Search.java)]
   - Inserção em lista encadeada simples [ [C++](src/linkedlist/cpp/insert.cpp), Lua, Python, [Java](src/linkedlist/java/Insert.java) ]
   - Lista encadeada circular [ [C++](src/linkedlist/cpp/circular.cpp), Lua, Python, [Java](src/linkedlist/java/Circle.java) ]
