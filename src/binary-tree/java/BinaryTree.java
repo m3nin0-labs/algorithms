@@ -29,6 +29,14 @@ public class BinaryTree<T extends Number & Comparable<T>> {
 		this.insertNodeEngine(this.root, newNode);
 	}
 
+	/**
+	 * Engine que realiza a inserção recursiva dos elementos na árvore binária.
+	 * Mantendo toda sua estrutura ordenada
+	 * 
+	 * @param root
+	 * @param newNode
+	 * @return
+	 */
 	private TreeNode<T> insertNodeEngine(TreeNode<T> root, TreeNode<T> newNode) {
 		if (Objects.isNull(root))
 			return newNode;
@@ -44,4 +52,40 @@ public class BinaryTree<T extends Number & Comparable<T>> {
 	public void showTree(Sweeper sweeper) {
 		sweeper.sweep(root);
 	}
+
+	/**
+	 * Realiza a busca de um elemento na árvore binária
+	 * 
+	 * @param element
+	 * @return
+	 */
+	public TreeNode<T> search(T element) {
+		return searchEngine(element, root);
+	}
+
+	/**
+	 * Engine de busca binária na árvore. Perceba que, por estar ordenado a busca é
+	 * fácilmente construída seguindo a ideia binária, onde o espaço vai sendo
+	 * dividido para que na busca não seja considerado valores que não fazem sentido
+	 * ser comparados
+	 * 
+	 * @param element
+	 * @param root
+	 * @return
+	 */
+	private TreeNode<T> searchEngine(T element, TreeNode<T> root) {
+		if (Objects.isNull(root))
+			return null;
+
+		// Raiz
+		if (root.getData().equals(element))
+			return root;
+
+		// Esquerda-Direita
+		if (root.getData().compareTo(element) == 1)
+			return searchEngine(element, root.getLeftLeaf());
+		return searchEngine(element, root.getRightLeaf());
+
+	}
+
 }

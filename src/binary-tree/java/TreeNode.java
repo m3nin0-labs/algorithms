@@ -49,4 +49,10 @@ public class TreeNode<T extends Number & Comparable<T>> {
 	public void setRightLeaf(TreeNode<T> rightLeaf) {
 		this.rightLeaf = rightLeaf;
 	}
+
+	@Override
+	public String toString() {
+		return "TreeNode(".concat(data.toString()).concat(")");
+	}
+
 }
