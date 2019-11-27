@@ -15,6 +15,19 @@ void SelectionSort(int elements[], int size) {
 	}
 }
 
+void BubbleSort(int * elements, int size) {
+	for(int j = 0; j < size - 1; j++) {
+		for(int i = 0; i < size - 1; i++) {
+			// Compara os pares (Atual | Próximo)
+			if (elements[i] > elements[i + 1]) {
+				int aux = elements[i];
+				elements[i] = elements[i + 1];
+				elements[i + 1] = aux;
+			}
+		}
+	}
+}
+
 void InsertionSort(int elements[], int size) {
 
 }
