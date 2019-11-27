@@ -45,6 +45,9 @@ Seção importante para o entendimento geral das estruturas de dados
   - Árvore binária (Percurso in-ordem) [ [C++](src/binary-tree/cpp/polish.cpp), Lua, Python, [Java](src/binary-tree/java/VisualizeTree.java) ]
   - Árvore binária (Percurso pós-ordem) [ [C++](src/binary-tree/cpp/endis.cpp), Lua, Python, [Java](src/binary-tree/java/VisualizeTree.java) ]
 
+- Ordenação (*sort*)
+    - Ordenação por seleção (*Selection sort*) [ [C++](src/sort/cpp/selection_sort.cpp), Lua, Python, Java ]
+
   <!-- - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/sequential.cpp), Lua, Python, Java ] -->
 
 <!-- 
