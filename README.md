@@ -48,6 +48,7 @@ Seção importante para o entendimento geral das estruturas de dados
 - Ordenação (*sort*)
     - Ordenação por seleção (*Selection sort*) [ [C++](src/sort/cpp/selection_sort.cpp), Lua, Python, Java ]
     - Ordenação da bolha (*Bubble sort*) [ [C++](src/sort/cpp/bubble_sort.cpp), Lua, Python, Java ]
+    - Ordenação por inserção (*Insertion sort*) [ [C++](src/sort/cpp/insertion_sort.cpp), Lua, Python, Java ]
 
   <!-- - Árvore binária (Busca) [ [C++](src/binary-tree/cpp/sequential.cpp), Lua, Python, Java ] -->
 
