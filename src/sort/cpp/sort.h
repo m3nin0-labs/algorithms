@@ -36,11 +36,11 @@ void InsertionSort(int elements[], int size) {
 		while (j >= 0 && elements[j] > key) {
 			// Movendo para a direita
 			elements[j + 1] = elements[j];
-
-			// Substitui o elemento a esquerda pela chave
-			elements[j] = key;
 			j -= 1;
 		}
+		// O final do loop indica que a posição onde o elemento 'key'
+		// deve ser inserida no array
+		elements[j + 1] = key;
 	}
 }
 
