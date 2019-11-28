@@ -29,7 +29,19 @@ void BubbleSort(int * elements, int size) {
 }
 
 void InsertionSort(int elements[], int size) {
+	for(int i = 1; i < size; i++) {
+		int j = i - 1;
+		int key = elements[i];
 
+		while (j >= 0 && elements[j] > key) {
+			// Movendo para a direita
+			elements[j + 1] = elements[j];
+
+			// Substitui o elemento a esquerda pela chave
+			elements[j] = key;
+			j -= 1;
+		}
+	}
 }
 
 #endif
